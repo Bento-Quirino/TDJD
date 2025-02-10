@@ -1,0 +1,10 @@
+1) Faça uma função que converta uma temperatura ºC para ºF e retorne o valor convertido.
+
+2) Faça uma função que verifica se um valor é par. Se for, a função deve retornar true, se não, retornar false.
+
+3) Escreva uma função que retorna o maior número entre dois.
+
+4) Escreva uma função que retorna o menor número entre dois.
+
+5) Converta a seguinte formóula para código:
+[https://wallstreetmojocms.recurpro.in/uploads/Interpolation_ad4fe77049.jpg]
