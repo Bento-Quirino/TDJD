@@ -1,0 +1,48 @@
+using System;
+using UnityEngine;
+
+public class NewMonoBehaviour : MonoBehaviour
+{
+    void Start()
+    {
+        string s = Sortear("Inrry", "Pagoto", "Bertolino", "Marcos");
+        print(Inverse(s));
+    }
+    
+    string Sortear(string nome1, string nome2, string nome3, string nome4)
+    {
+        //Como criar um array:
+
+        /*1º Forma: Declara o array e depois define seus valores*/
+        //'4' porque na linha abaixo indica
+        //quantidade de elementos
+        //string[] lista = new string[4];
+        //lista[0] = nome1; (...)
+        
+        /*2º Forma: inicializa com os valores desejados*/
+        string[] lista  = { nome1, nome2, nome3, nome4 };
+        
+        //Sorteia um valor de índice do array
+        int index = Random.Range(0, lista.Length);
+
+        //retorna o valor no índice sorteado
+        return lista[index];
+    }
+    
+    string Inverse(string nome)
+    {
+        //Inverter nome por exemplo "Inrry" -> "yrrnI"
+
+        //cria uma string vazia
+        string inversed = "";
+        
+        //itera sobre os 'char' da string 'nome', do fim para o começo
+        for(int i = nome.Length - 1; i >= 0; --i)
+        {
+            //para cada 'char' presente no nome, adiciona à string (concatena)
+            inversed += nome[i];
+        }
+
+        return inversed;
+    }
+}
