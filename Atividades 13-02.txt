@@ -1,0 +1,23 @@
+1) Escreva uma função que recebe um nome completo (em uma unica variável), e o separa
+em um array de string (não importa a quantidade de nome e sobrenome).
+
+2) Escreva uma função que recebe uma palavra, e retorna um anagrama.
+
+3) Considere que um vetor é armazenado na forma "float[]" (array de float) de 3 posições.
+Escreva uma função que efetua e retorna o produto vetorial entre dois vetores.
+
+4) Escreva uma função que recebe um array de int e retorna um novo array, com os valores ordenados.
+Adicione um segundo parâmetro para indicar se o ordenamento é "maior -> menor" ou "menor -> maior".
+
+5) Escreva uma classe que efetua solução de uma equação de segundo grau.
+Ela deve conter dois métodos, um que recebe três parâmetros a, b e c; e outro método em que a equação inteirira
+é passada como string, e internamente os coeficientes são separados e convertidos para então se efetuar o cálculo.
+Adicione checagem de erros como valores negativos ou zero.
+
+6) Considere que um vetor é armazenado na forma "float[]" (array de float) de 3 posições.
+Escreva uma função que efetua e retorna a soma entre dois vetores.
+
+7) A partir da classe Progress, desenvolva uma nova classe chamada Save, que recebe os valores de level e posição, e os converte para string.
+O método que faz essa conversao deve retornar os valores em um array de string.
+
+enviar códigos para marcos.prof.cps@bentoquirino.com.br, assunto "AT 13/02"
