@@ -1,0 +1,57 @@
+/*Suponha que você esteja trabalhando em um jogo.
+O progresso do jogador é salvo em um arquivo de texto (por exemplo .csv ou JSON).
+Esse progresso guarda as informações de level do personagem e posição no cenário.
+Considerando que esse arquivo de texto é lido por uma classes específica, e que ela retorna
+cada um dos dois elementos do progresso como variáveis string, escreva uma classe
+que recebe essas variáveis e aplica o valor convertido da string para os
+atributos correspondentes.*/
+
+public class Progress : MonoBehaviour
+{
+    public int level;
+    public Vector3 position;
+
+    public void Set(string stringLevel,
+                string stringPosition)
+    {
+        level = int.Parse(stringLevel);
+
+        //considerando que a posição esteja
+        //no seguinte padrão "5.8;9.7;0.0"
+        string[] p = stringPosition.Split(';');
+
+        position = new Vector3(
+            float.Parse(p[0]),
+            float.Parse(p[1]),
+            float.parse(p[2])
+        );
+    }
+}
+
+/* Split() from scratch
+string s;
+string array[];
+int index = 0;
+for(int i = 0; i < s.Length; ++i)
+{
+    if(s[i] != ";")
+    {
+        array[index] += s[i];
+    }
+    else { index++; }
+}
+*/
+
+//Exemplo de como rodar
+public class Load
+{
+    public Progress progress;
+    //public ReadFile file;
+
+    void Start()
+    {
+        //file.Read("Save01.csv");
+        //i.e "10", "5;3;0.0"
+        progress.Set(file.level, file.position);
+    }
+}
