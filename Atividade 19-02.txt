@@ -1,0 +1,8 @@
+Faça um projeto no Unity em que o usuário seja capaz de controlar um objeto da seguinte forma:
+- o objeto se move apenas para FRENTE e para TRÁS;
+- o objeto gira apenas para a esquerda e para a direita;
+- o objeto pode se mover e girar ao mesmo tempo, nas direções supradeterminadas
+Similar ao GTA 1 / Residente Evil 1.
+
+Enviar código para marcos.prof.cps@bentoquirino.com.br, 
+assunto: "Movimento Unity 3º Games"
