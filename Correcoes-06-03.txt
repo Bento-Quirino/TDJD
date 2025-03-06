@@ -1,0 +1,104 @@
+using System;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Atividades : MonoBehaviour
+{
+    //- O que faz o comando 'return'?
+    // Encerra a execução de uma função ou método.
+    //Quando a função ou método possuem tipo, existe um valor
+    //de retorno que deve ser retornado junto com o fim da execução
+    //da função ou método.
+    //Se a função ou método NÃO possuem tipo (ou seja, são void),
+    //o return não acompanha nenhum.
+
+    //(06/02) 2) Faça uma função que verifica se um valor é par.
+    //Se for, a função deve retornar true, se não, retornar false.
+    bool IsEven(int number)
+    {
+        //'%' é o operador de resto da divisão
+        //return o resto de uma divisão entre inteiros
+        //No caso, se a divisão for igual a zero, é porque o número
+        //é divisível por 2, e, portanto, é par.
+        if (number % 2 == 0) { return true; }
+        //como só tem duas opções, se o if for falso,
+        //então o número só pode ser impar (não par).
+        return false;
+    }
+
+    //13/02
+    //2) Escreva uma função que recebe uma palavra
+    //e retorna um anagrama.
+    string RandomLetters(string word)
+    {
+        string original = word;
+        string anagram = "";
+
+        //Guarda a informação do tamanho que a nova palavra
+        //deve ter, porque conforme removemos a letra sorteada
+        //de "word", seu tamanho muda.
+        int size = original.Length;
+
+        //Faz um for para o número de letras da palavra original
+        //sorteia uma posiçao em "word", copia para "anagram"
+        //e depois remove a letra sorteada de "word"
+        for (int i = 0; i < size; i++)
+        {
+            int r = UnityEngine.Random.Range(0, word.Length);
+            anagram += word[r];
+
+            //remoção do caracer presente no índice sorteado (r)
+            StringBuilder sb = new StringBuilder(word);
+            sb.Remove(r, 1);
+            word = sb.ToString();
+        }
+
+        return anagram;
+    }
+
+    //4) Escreva uma função que recebe um array de int e retorna um novo array,
+    //com os valores ordenados. Adicione um segundo parâmetro para indicar
+    //se o ordenamento é "maior -> menor" ou "menor -> maior".
+    int[] Sort(int[] array, bool greaterToLesser)
+    {
+        //[5, 8, 3, 1, 7, 2, 15, 9, 63, 54, 10]
+        //O FOR externo guarda o índice do elemento atual de comparação
+        for (int j = 0; j < array.Length - 1; ++j)
+        {
+            //O FOR interno anda ao longo do array, para permitir
+            //a comparação do elemento atual de comparação com o restante
+            //dos elementos presentes no array.
+            for (int i = 0; i < array.Length - 1; ++i)
+            {
+                if (greaterToLesser)
+                {
+                    if (array[j] < array[i])
+                    {
+                        int t = array[i];
+                        array[j] = array[i];
+                        array[i] = t;
+                    }
+                }
+                else
+                {
+                    if (array[j] > array[i])
+                    {
+                        int t = array[i];
+                        array[j] = array[i];
+                        array[i] = t;
+                    }
+                }
+            }
+        }
+
+        return array;
+    }
+
+    void Start()
+    {
+        string word = "joerson";
+        print(RandomLetters(word));
+    }
+}
