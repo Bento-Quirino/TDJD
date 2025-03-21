@@ -1,0 +1,25 @@
+1. O que é o componente Transform em Unity e qual a sua importância?
+2. Como você acessa e modifica a posição (position) de um GameObject em um script?
+3. Como você move um GameObject para frente ao longo do seu eixo Z usando o Transform?
+4. Quais são os componentes mais comuns em Unity e para que eles são usados? (Mencione pelo menos 5.)
+5. Para que serve o componente Rigidbody e em que tipo de GameObject ele é usado?
+6. O que faz o componente Collider e qual a diferença entre um Collider e um Trigger?
+7. O que é um GameObject em Unity e como ele se relaciona com os componentes?
+8. Como você cria um GameObject dinamicamente em um script usando código?
+9. O que é a hierarquia de GameObjects no Unity e por que ela é importante?
+10. O que é a classe MonoBehaviour e qual o seu papel no desenvolvimento de scripts em Unity?
+11. Quais são os métodos mais comuns do MonoBehaviour e quando eles são chamados? (Mencione pelo menos 3.)
+12. Como você inicializa variáveis ou configurações no método Start() de um script?
+13. O que faz o método OnCollisionEnter() e em que situações ele é útil?
+14. O que é um ScriptableObject e em que situações ele é útil?
+15. Qual a diferença entre um ScriptableObject e um MonoBehaviour?
+16. Como você pode usar ScriptableObjects para armazenar dados compartilhados entre cenas ou objetos?
+17. O que faz o método Instantiate() e como ele é usado para criar objetos em tempo de execução?
+18. Como você usa o método GetComponent() para acessar componentes de um GameObject?
+19. O que é o Canvas em Unity e qual o seu papel na criação de interfaces de usuário?
+20. Como você cria um botão clicável em Unity usando o sistema de UI?
+21. Como você atualiza o texto de um elemento Text ou TextMeshPro dinamicamente em um script?
+22. Escreva um script que move um GameObject, em 2D, para a posição do mouse quando o botão esquerdo é clicado.
+23. Escreva um script que instancia um prefab na posição de outro GameObject quando uma tecla é pressionada.
+24. Como você configuraria um ScriptableObject para armazenar dados de inimigos (como vida e dano)?
+25. Crie um script que alterne a visibilidade de um GameObject ao pressionar uma tecla.
